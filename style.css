@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;    /* Vertical center */
+    background-color: #e7a1d2; /* Light background */
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack heading and button vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between heading and button */
+}
+
+/* Heading styling */
+#toggleText {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Button styling */
+#toggleButton {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff69b4;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#toggleButton:hover {
+    background-color: #ff1493;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #toggleText {
+        font-size: 3rem;
+    }
+
+    #toggleButton {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+}
